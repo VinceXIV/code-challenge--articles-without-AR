@@ -14,10 +14,17 @@ class Article
         end
     end
 
+    def author
+        @author.name
+    end
+
+    def magazine
+        @magazine.name
+    end
+
     def self.all
         @@all
     end
-
 
     class InitializationError < ArgumentError
         def message
