@@ -14,8 +14,7 @@ class Magazine
   end
 
   def contributors
-    articles = Article.all.filter {|article| article.magazine == self}
-    articles.map {|article| article.author}
+    articles_in_this_magazine.map {|article| article.author}
   end
 
   def article_titles
