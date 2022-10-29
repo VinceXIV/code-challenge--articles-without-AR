@@ -7,7 +7,6 @@ class Magazine
     if (name.is_a?(String) && category.is_a?(String))
       @name = name
       @category = category
-      @contributors = []
       @@all << self
     else
       raise InitializationError
@@ -15,7 +14,8 @@ class Magazine
   end
 
   def contributors
-    @contributors
+    articles = Article.all.filter {|article| article.magazine == self}
+    articles.map {|article| article.author}
   end
 
   def article_titles
