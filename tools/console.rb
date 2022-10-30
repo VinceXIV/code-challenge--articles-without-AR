@@ -16,7 +16,7 @@ var_check = Magazine.new("VAR Check", "Sports")
 
 vincent.add_article(the_awesome, "The Quick Brown Awesome Fox")
 vincent.add_article(the_awesome, "Getting Things Done")
-vincent.add_article(the_awesome, "Did You Ever Have One of Those Days")
+vincent.add_article(the_awesome, "Did You Ever Have One of Those Days?")
 omondi.add_article(zero_to_100, "How I Learned to Walk")
 
 
